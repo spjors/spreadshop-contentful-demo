@@ -1,8 +1,6 @@
-# Compose Starter: Help Center + Next.js
+# Spreadshop Website Demo using Contentful
 
-This is a sample website frontend to help you get started with Compose and
-Next.js. You can use this example with Compose's quick start content for empty
-spaces.
+Spreadshop Website Demo using Contentul. 
 
 ## Getting started
 
