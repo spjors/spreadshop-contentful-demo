@@ -4,15 +4,6 @@ import { documentToPlainTextString } from '@contentful/rich-text-plain-text-rend
 
 import { ComponentContentTypes } from 'lib/constants';
 
-const isTextNode = (node: unknown) => {
-  return get(node, 'sys.contentType.sys.id') == ComponentContentTypes.Text;
-};
-
 export const getSummary = (content: unknown[] = []): string => {
-  const text = content
-    .filter(isTextNode)
-    .map((node) => documentToPlainTextString(get(node, 'fields.text')))
-    .join(' ');
-
-  return truncate(text, { length: 70 });
+  return truncate('', { length: 70 });
 };
